@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>TextEditor by n9dyfi</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/n9dyfi/texteditor-sfos">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/n9dyfi/texteditor-sfos/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/n9dyfi/texteditor-sfos/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>TextEditor</h1>
+          <p>A simple text editor for the Sailfish OS</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/n9dyfi">n9dyfi</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p><img src="https://cloud.githubusercontent.com/assets/6352990/11638945/4e0d3c48-9d32-11e5-8678-ade3cb12dd8c.png" alt="TextEditor"><strong>TextEditor</strong> is a simple text editor application for the Nokia N9 phone. It includes a minimalistic file browser for opening and saving files (currently there is no support for hidden files). </p>
+
+<p>The application is released under the GPL3 license and the source codes are available on Github.</p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>TextEditor is available in <a href="https://openrepos.net/content/n9dyfi/texteditor">OpenRepos</a>. You can use the OpenRepos <a href="https://openrepos.net/content/basil/warehouse">Warehouse</a> application to install the TextEditor.</p>
+
+<h3>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h3>
+
+<p>The figure below shows the edit view. The title bar displays the file name and the folder name. The bottom toolbar contains a quick save button and the file menu. The recent files button displays a list of recently opened files.
+<img src="https://cloud.githubusercontent.com/assets/6352990/15686357/890216e0-2778-11e6-82b4-0e36138d30e9.png" alt="texteditor-editpage-with-recentfiles">
+The recent files page shows a list of file names and folder names of the 8 most recently accessed files. Just click the file name to open it. The recent files list will be saved into $HOME/.texteditor/recentfiles.dat when the application is closed.
+<img src="https://cloud.githubusercontent.com/assets/6352990/15687066/7d12c426-277b-11e6-9887-8e047435d818.png" alt="texteditor-recentfiles-page">
+The file menu contains entries for opening a new file, opening an existing file and saving a file with a new name. Clicking About will display the application version and Quit will terminate the application. Swiping down will also terminate the application but in that case no warning will be issued for possible unsaved changes.
+<img src="https://cloud.githubusercontent.com/assets/6352990/11666119/8277a48e-9df3-11e5-8d7f-ce2cc35406a9.png" alt="texteditor-02">
+Clicking File&gt;Open will open the file browser for selecting a file to edit. Clicking a folder in the browser will open that folder. The back button in the toolbar will go back to the previous folder. The refresh button will reload the folder contents. The toolbar menu can be used to cancel the browsing and go back to the editor.
+<img src="https://cloud.githubusercontent.com/assets/6352990/11677001/7048b2c8-9e41-11e5-8962-8fd3f81fdffc.png" alt="texteditor-03">
+To save the file with a new name select "Save As" from the File menu. The file browser will open. Select the target folder and write the file name to the text box above the browser window. Then either click enter in the keyboard or click the Save button in the title bar.
+<img src="https://cloud.githubusercontent.com/assets/6352990/11667914/238a0174-9dfd-11e5-9859-6022c418364b.png" alt="texteditor-04"></p>
+
+<h3>
+<a id="getting-the-source-code" class="anchor" href="#getting-the-source-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting the source code</h3>
+
+<p>You can download the source code for the TextEditor from <a href="https://github.com/n9dyfi/TextEditor.git">Github</a>. If you have Git, QtCreator IDE and Nokia QtSDK installed then you can open the TextEditor project directly from Github. Just start QtCreator and select Create Project…&gt;Project from Version Control&gt;Git Repository Clone. The Clone URL is <a href="https://github.com/n9dyfi/TextEditor.git">https://github.com/n9dyfi/TextEditor.git</a>. The application should run fine with the N9 simulator.</p>
+
+<h3>
+<a id="translations" class="anchor" href="#translations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Translations</h3>
+
+<p>If you would like have the TextEditor to be localized to your own language it is now possible. You just need to provide the translation from english to the language of your choise. The translation can be done online using the Transifex service. Just follow these steps:
+1. Create an account on the Transifex site.
+2. Go to the <a href="https://www.transifex.com/n9dyfi/texteditor/">TextEditor project</a>.
+3. Request a translation for the english language file tr_en.ts. Wait for confirmation.
+4. Join the TextEditor translation project. And wait for confirmation.
+5. Translate using the Transifex online tools.
+The translated Qt language files will be included to the next TextEditor release (and updates will be published on OpenRepos).</p>
+
+<h3>
+<a id="version-history" class="anchor" href="#version-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version history</h3>
+
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Version</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30-May-2016</td>
+<td>1.4</td>
+<td>Added recent files page.</td>
+</tr>
+<tr>
+<td>16-Dec-2015</td>
+<td>1.3</td>
+<td>German translation (Orthografixer &amp; Mee_Germany_Go).</td>
+</tr>
+<tr>
+<td>13-Dec-2015</td>
+<td>1.2</td>
+<td>Hungarian translation (ViBE).</td>
+</tr>
+<tr>
+<td>12-Dec-2015</td>
+<td>1.1</td>
+<td>Russian translation (mihsun), finnish translation (E.B.).</td>
+</tr>
+<tr>
+<td>10-Dec-2015</td>
+<td>1.0</td>
+<td>Initial release.</td>
+</tr>
+</tbody>
+</table>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
