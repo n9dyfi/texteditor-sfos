@@ -1,33 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
     <title>TextEditor by n9dyfi</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/n9dyfi/texteditor-sfos">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/n9dyfi/texteditor-sfos/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/n9dyfi/texteditor-sfos/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <header>
-      <div class="container">
-        <h1>TextEditor</h1>
-        <h2>A simple text editor for the Sailfish OS</h2>
+    <div class="wrapper">
 
-        <section id="downloads">
-          <a href="https://github.com/n9dyfi/texteditor-sfos/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/n9dyfi/texteditor-sfos/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/n9dyfi/texteditor-sfos" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+      <section>
+        <div id="title">
+          <h1>TextEditor</h1>
+          <p>A simple text editor for the Sailfish OS</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/n9dyfi">n9dyfi</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-    <div class="container">
-      <section id="main_content">
         <p><img src="https://cloud.githubusercontent.com/assets/6352990/18322903/b27f60d2-753d-11e6-96cf-4d2acf5dcf38.png" alt="texteditor-sfos-fullsize"><strong>TextEditor</strong> is a simple text editor application for the Jolla/Sailfish OS phones. It includes a minimalistic file browser for opening and saving files (currently there is no support for hidden files). </p>
 
 <p>The application is released under the GPL3 license and the source codes are available on Github.</p>
@@ -57,17 +67,6 @@ To save the file with a new name select "Save As" from the File menu. The file b
 <p>You can download the source code for the TextEditor from <a href="https://github.com/n9dyfi/TextEditor.git">Github</a>. If you have Git, QtCreator IDE and Nokia QtSDK installed then you can open the TextEditor project directly from Github. Just start QtCreator and select Create Project…&gt;Project from Version Control&gt;Git Repository Clone. The Clone URL is <a href="https://github.com/n9dyfi/TextEditor.git">https://github.com/n9dyfi/TextEditor.git</a>. The application should run fine with the N9 simulator.</p>
 
 <h3>
-<a id="translations" class="anchor" href="#translations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Translations</h3>
-
-<p>If you would like have the TextEditor to be localized to your own language it is now possible. You just need to provide the translation from english to the language of your choise. The translation can be done online using the Transifex service. Just follow these steps:
-1. Create an account on the Transifex site.
-2. Go to the <a href="https://www.transifex.com/n9dyfi/texteditor/">TextEditor project</a>.
-3. Request a translation for the english language file tr_en.ts. Wait for confirmation.
-4. Join the TextEditor translation project. And wait for confirmation.
-5. Translate using the Transifex online tools.
-The translated Qt language files will be included to the next TextEditor release (and updates will be published on OpenRepos).</p>
-
-<h3>
 <a id="version-history" class="anchor" href="#version-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version history</h3>
 
 <table>
@@ -80,35 +79,16 @@ The translated Qt language files will be included to the next TextEditor release
 </thead>
 <tbody>
 <tr>
-<td>30-May-2016</td>
-<td>1.4</td>
-<td>Added recent files page.</td>
-</tr>
-<tr>
-<td>16-Dec-2015</td>
-<td>1.3</td>
-<td>German translation (Orthografixer &amp; Mee_Germany_Go).</td>
-</tr>
-<tr>
-<td>13-Dec-2015</td>
-<td>1.2</td>
-<td>Hungarian translation (ViBE).</td>
-</tr>
-<tr>
-<td>12-Dec-2015</td>
-<td>1.1</td>
-<td>Russian translation (mihsun), finnish translation (E.B.).</td>
-</tr>
-<tr>
-<td>10-Dec-2015</td>
+<td>01-Sep-2016</td>
 <td>1.0</td>
 <td>Initial release.</td>
 </tr>
 </tbody>
 </table>
       </section>
-    </div>
 
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
